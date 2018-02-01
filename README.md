@@ -9,6 +9,10 @@ Follow installation instructions from here to install all 3: https://geekatwork.
 
 The first link seem to be missing some ENV variables you are supposed to set. Try also following the instructions here: https://medium.com/@jeremytarling/apache-spark-and-hadoop-on-a-macbook-air-running-osx-sierra-66bfbdb0b6f7
 
+After following both links, spark-shell was not able to start. The fix was here: https://spark.apache.org/docs/latest/hadoop-provided.html.
+
+Basically, both links installed the 'hadoop free' versions of spark. Hence, to start spark, you need to tell spark where your hadoop distribution is so spark can find hadoop.
+
 ## Hadoop
 ### Commands
 * */usr/local/hadoop/sbin/start-dfs.sh* - start HDFS
@@ -23,5 +27,3 @@ The first link seem to be missing some ENV variables you are supposed to set. Tr
 Page 27
 
 Getting Started: The Spark Shell and SparkContext
-
-Before that: Followed the two link above to install Hadoop, Spark, and Scala. However, when using *spark-shell* from the command line, it throws a java exception. Find out why and get spark working
