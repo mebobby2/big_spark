@@ -21,9 +21,14 @@ Basically, both links installed the 'hadoop free' versions of spark. Hence, to s
 * */usr/local/hadoop/sbin/stop-yarn.sh* - stop YARN
 * *hdfs dfs -ls /* - list directories at /
 * *hdfs dfs -mkdir /user* - Create directory /userstart-yarn.shstart-yarn.sh
+* *hdfs dfs -put block_*.csv /user/bobby/linkage* - Put files, in this case CSV, from host directory into Hadoop
 
+## Spark
+### Commands
+* *spark-shell --master yarn-client* - Start the scala REPL with Spark extentions. We use YARN, the scheduler inside Hadoop as the cluster manager to schedule Spark jobs onto the different nodes
+* *spark-shell --master 'local[*]'* - We use the standalone scheduler that comes with Spark as the cluster manager to schedule Spark jobs. The scheduler is running with the number of nodes (as threads) that match the number of cores on our machine. * means match the number of CPU cores
 
 # Upto
-Page 27
+Page 31
 
-Getting Started: The Spark Shell and SparkContext
+Our record linkage data is stored in a text file
