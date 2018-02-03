@@ -29,6 +29,6 @@ Basically, both links installed the 'hadoop free' versions of spark. Hence, to s
 * *spark-shell --master 'local[*]'* - We use the standalone scheduler that comes with Spark as the cluster manager to schedule Spark jobs. The scheduler is running with the number of nodes (as threads) that match the number of cores on our machine. * means match the number of CPU cores
 
 # Upto
-Page 31
+Page 42
 
-Our record linkage data is stored in a text file
+Aggregations˝
