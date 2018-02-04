@@ -34,6 +34,10 @@ spark-shell --jars target/simplesparkproject-0.1.0-jar-with-dependencies.jar --m
 
 To pass configuration options on the command line, use the ```--conf``` option, e.g. ```--conf``` ```spark.serializer=org.apache.spark.serializer.KryoSerializer```.
 
+# Load Files from Spark Shell
+1. From the directory where the files are stored, start the spark shell ```spark-shell --master yarn-client```.
+2. Once inside the shell, load the file using e.g. ```:load StatsWithMissing.scala```
+
 # Tool Commands
 ## Hadoop
 * */usr/local/hadoop/sbin/start-dfs.sh* - start HDFS
@@ -49,6 +53,6 @@ To pass configuration options on the command line, use the ```--conf``` option, 
 * *spark-shell --master 'local[*]'* - We use the standalone scheduler that comes with Spark as the cluster manager to schedule Spark jobs. The scheduler is running with the number of nodes (as threads) that match the number of cores on our machine. * means match the number of CPU cores
 
 # Upto
-Page 44
+Page 53
 
-Summary Statistics for Continuous Variables
+Chapter 3
