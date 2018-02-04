@@ -38,6 +38,14 @@ To pass configuration options on the command line, use the ```--conf``` option, 
 1. From the directory where the files are stored, start the spark shell ```spark-shell --master yarn-client```.
 2. Once inside the shell, load the file using e.g. ```:load StatsWithMissing.scala```
 
+# Notes
+## Collaborative Filtering
+For each user, recommender systems recommend items based on how similar users liked the item. Let's say Alice and Bob have similar interests in video games. Alice recently played and enjoyed the game Legend of Zelda: Breathe of the Wild. Bob has not played this game, but because the system has learned that Alice and Bob have similar tastes, it recommends this game to Bob. In addition to user similarity, recommender systems can also perform collaborative filtering using item similarity ("Users who liked this item also liked X").
+
+Apart from Collaborative Filtering, another popular technique used in recommendation systems is Content-based Recommendations.
+
+Content-based Recommendations: If companies have detailed metadata about each of your items, they can recommend items with similar metadata tags. For example, let's say I watch the show Bojack Horseman on Netflix. This show may have metadata tags of "Animated", "Comedy", and "Adult", so Netflix recommends other shows with these metadata tags, such as Family Guy.
+
 # Tool Commands
 ## Hadoop
 * */usr/local/hadoop/sbin/start-dfs.sh* - start HDFS
