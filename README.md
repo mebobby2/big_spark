@@ -52,7 +52,10 @@ To pass configuration options on the command line, use the ```--conf``` option, 
 * *spark-shell --master yarn-client* - Start the scala REPL with Spark extentions. We use YARN, the scheduler inside Hadoop as the cluster manager to schedule Spark jobs onto the different nodes
 * *spark-shell --master 'local[*]'* - We use the standalone scheduler that comes with Spark as the cluster manager to schedule Spark jobs. The scheduler is running with the number of nodes (as threads) that match the number of cores on our machine. * means match the number of CPU cores
 
-# Upto
-Page 53
+## Maven
+* *mvn archetype:generate -DgroupId=com.bigspark.app -DartifactId=linkage -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false* - Generate a new Maven project
 
-Chapter 3
+# Upto
+Page 60
+
+Building a First Model
