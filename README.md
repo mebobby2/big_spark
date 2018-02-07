@@ -69,3 +69,5 @@ Content-based Recommendations: If companies have detailed metadata about each of
 Page 60
 
 Building a First Model
+
+Before that: Change linkage/App.scala into a file that can be loaded into spark-shell and just run through one function - refer to the book's original code as a guide
